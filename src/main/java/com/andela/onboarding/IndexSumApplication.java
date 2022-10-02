@@ -62,11 +62,11 @@ public class IndexSumApplication implements CommandLineRunner {
 
 	/**
 	 * @param target Target element
-	 * @param list List of integers where list[0] is the target
+	 * @param input List of integers to be analyzed
 	 * @return The two indexes of the two elements whose sum is equals to target.
 	 */
-	public static List<Integer> indexes(Integer target, List<Integer> list) {
-		Integer array[] = list.toArray( new Integer[0]); // the remaining argument are the number whose sums we will compare to target.
+	public static List<Integer> indexes(Integer target, List<Integer> input) {
+		Integer array[] = input.toArray( new Integer[0]); // the remaining argument are the number whose sums we will compare to target.
 		
 		/**
 		 * Simplistic O(N²) search
